@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+  display: flex;
+  background-color: green;
+  padding: 1.5rem;
+  text-align: center;
+  color: #fff;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  top: 0;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.419);
+  font-size: 10px;
+  width: 100%;
+  margin-bottom: 1%;
+}
+
+
+
+
+
+.btns{
+  display: flex;
+  width: 400px;
+  gap: 6%;
+}
+button{
+  width: 100px;
+  background-color: rgb(0, 185, 0);
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.214);
+  cursor: pointer;
+  font-size: 10px;
+  padding: 1%;
+}
+
+button:hover{
+  opacity: 80%;
+}
+
+
+
+footer {
+  position: relative;
+  bottom: 0;
+  margin-bottom: 0%;
+  text-align: center;
+  font-size: 8px;
+  color: #fff;
+  background-color: green;
+  width: 100%;
+  padding: 1rem;
+  box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.419);
+  margin-top: 5%;
+}
+
+main {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+table {
+  border-collapse: collapse; /* Garante que as células tenham espaçamento */
+  border-spacing: 100px 20px; /* Define o espaçamento entre as células */
+  background-color: #f4f4f4;
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 3%;
+  width: 100%;
+  
+}
+
+td, th {
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.188);/* Adiciona uma borda de 1px sólida em todas as células */
+  padding: 1rem;
+  width: 200px;
+  font-size: 12px;
+}
+
+thead > tr{
+  font-weight: 600;
+  
+  
+}
+
+
+#modal-container{
+  align-items: center;
+  margin: auto;
+  justify-content: space-between;
+  width: 60%;
+  position: absolute;
+  top: 30%;
+  bottom: 50%;
+  padding: 1rem;
+  
+}
+
+#modal-container::backdrop{
+  background-color: rgba(0, 0, 0, 0.558);
+}
+
+input{
+  width: 50%;
+  padding: 1%;
+  margin-bottom: 2%;
+}
+
+.modalItens{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 5%;
+}
+
+.m-header{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.m-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.m-header > button{
+  padding: 2%;
+  text-align: center;
+  margin-bottom: 3%;
+  background-color: rgb(0, 185, 0);
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  font-size: 0.8rem;
+  border-radius: 10px;
+}
+
+#error{
+  color: red;
+  margin-top: 1%;
+  display: none;
+}
+
+#modal-remover{
+  align-items: center;
+  margin: auto;
+  justify-content: space-between;
+  width: 60%;
+  position: absolute;
+  top: 30%;
+  bottom: 50%;
+  padding: 1rem;
+}
+
+.m-remover-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.m-remover-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2%;
+}
+
+
+#error-remover {
+  color: red;
+  margin-top: 2%;
+  display: none;
+}
+
+#error-chamar{
+  color: red;
+  display: none;
+  margin-top: 2%;
+}
+
+#modal-chamar{
+  align-items: center;
+  margin: auto;
+  justify-content: space-between;
+  width: 60%;
+  position: absolute;
+  top: 30%;
+  bottom: 50%;
+  padding: 1rem;
+}
+
+.m-chamar-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.m-chamar-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2%;
+}
+
+
+a{
+  text-decoration: none;
+  color: #fff;
+}

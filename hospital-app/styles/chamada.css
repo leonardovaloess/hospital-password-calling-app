@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    min-height: 100vh;
+    margin: auto;
+}
+
+
+.senhaCard{
+    background-color: #f4f4f4;
+    width: 50%;
+    height: 50vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+    font-size: 200%;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.356);
+}
+
+
+.conteudo{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align: center;
+}
+
+span{
+    color: rgb(5, 201, 5);
+    font-size: 90px;
+    
+}
+
+.greenFooter{
+    width: 100%;
+    background-color: green;
+    padding: 2.5rem;
+    bottom: 0;
+}
+
+.greenHeader{
+    width: 100%;
+    background-color: green;
+    text-align: center;
+    padding: 1rem;
+}
+
+.greenHeader {
+    color: #fff;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.555);
+}

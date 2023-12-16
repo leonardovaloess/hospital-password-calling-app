@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hospital</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="scripts/app.js" type="module" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Fila de atendimento</h1>
+      <div class="btns">
+        <button id="chamadaBtn"><a href="chamada.html" target="_blank">chamada</a></button>
+        <button id="addPaciente">Adicionar paciente.</button>
+        <button id="removerBtn">Remover.</button>
+        <button id="chamarBtn">Chamar.</button>
+      </div>
+    </header>
+    
+    <dialog id="modal-remover">
+      <div class="m-remover-header">
+        <h1>Remover paciente</h1>
+        <button id="m-remover-fechar">fechar</button>
+      </div>
+      <div class="m-remover-content">
+        <input type="text" placeholder="Senha para remover:" id="inputSenhaRemover">
+        <button type="submit" id="m-remover-Btn">remover</button>
+        <span id="error-remover">paciente ou senha não encontrados</span>
+      </div>
+    </dialog>
+
+    <dialog id="modal-chamar">
+      <div class="m-chamar-header">
+        <h1>Chamar paciente</h1>
+        <button id="m-chamar-fechar">fechar</button>
+      </div>
+      <div class="m-chamar-content">
+        <input type="text" placeholder="Senha para chamar:" id="inputSenhachamar">
+        <button type="submit" id="m-chamar-Btn">chamar</button>
+        <span id="error-chamar">Paciente ou senha não encontrados</span>
+      </div>
+    </dialog>
+    
+    <dialog id="modal-container">
+      <div class="modalItens">
+        <div class="m-header">
+          <h1>Adicionar paciente</h1>
+          <button id="m-fechar">fechar</button>
+        </div>
+        <div class="m-content">
+          <input type="text" placeholder="Nome:" id="m-nome" />
+          <input type="text" placeholder="Atendimento:" id="m-atendimento" />
+          <button type="submit" id="m-Add">Cadastrar</button>
+          <span id="error">Por favor, preencha os Dados!</span>
+        </div>
+      </div>
+    </dialog>
+
+    <main>
+      <table id="tabelaDePacientes">
+        <thead>
+          <tr>
+            <td>Nome:</td>
+            <td>Senha:</td>
+            <td>Atendimento:</td>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      
+    </main>
+  </body>
+</html>
